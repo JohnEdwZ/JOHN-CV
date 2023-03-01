@@ -6,10 +6,42 @@
   --secondary-color: #f7c331;
   --text-color-inverse: white;
   --text-color: black;
-  --navbar-shallow-color: #e5e5e5;
   --menu-mobile-background-color: #3a4460;
+
+  --accent-color: var(--primary-color);
+  --primary-color-inverse: black;
+
+  --navbar-shadow: 0 4px 5px #e5e5e5;
+  --tag-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  --transition: .2s ease-in-out;
+  color-scheme: light;
 }
 
+  :root[data-theme="dark"]  {
+    --theme-color: #0F172A;
+    --primary-color: #243043;
+    --secondary-color: #9DC8DB;
+    --text-color: rgba(255, 255, 255, .87);
+    --text-color-inverse: var(--text-color);
+    --menu-mobile-background-color: #18213E;
+  
+    --accent-color: var(--secondary-color);
+    --navbar-shadow: 0 2px rgba(51, 65, 85, .8);
+    --tag-shadow: 0 0 0 1px #FFFFFF;
+    color-scheme: dark;
+  }
+
+form {
+  color-scheme: light;
+}
+
+* {
+  transition: background-color var(--transition), box-shadow var(--transition);
+}
+
+svg {
+  transition: color var(--transition);
+}
 html {
   scroll-behavior: smooth;
 }
