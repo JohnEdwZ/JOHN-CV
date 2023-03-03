@@ -7,6 +7,7 @@
 .profile-img {
     width: 80%;
     max-width: 300px;
+    border-radius: 45%;
   }
   
 .profile-img-section {
